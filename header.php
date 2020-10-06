@@ -13,7 +13,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body id="<?php the_slug(); ?>" <?php body_class(); ?>>
 
   <!-- ページ全体の囲み枠 -->
   <div id="wrapper">
@@ -22,7 +22,7 @@
     <header>
       <h1>株式会社ParadigmShift | 海外輸入とインターネット通販でお客様に幸せをお届けします。</h1>
       <div id="header-logo">
-        <a href="index.html"><img src="img/header_logo.png" alt="株式会社ParadigmShift"></a>
+        <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/header_logo.png" alt="株式会社ParadigmShift"></a>
       </div>
     </header>
 
