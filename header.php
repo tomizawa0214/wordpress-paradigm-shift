@@ -27,11 +27,11 @@
     </header>
 
     <!-- グローバルナビゲーション -->
-    <nav id="gNav">
-      <ul>
-        <li class="current-menu-item"><a href="index.html">ホーム</a></li>
-        <li><a href="business.html">事業内容</a></li>
-        <li><a href="about.html">会社概要</a></li>
-        <li><a href="contact.html">お問い合わせ</a></li>
-      </ul>
-    </nav>
+    <?php
+      $param = array(
+        'container' => 'nav',
+        'container_id' => 'gNav',
+        'theme_location' => 'global_nav',
+      );
+      wp_nav_menu($param);
+    ?>
