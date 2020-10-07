@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="株式会社ParadigmShiftの公式企業サイトです。事業内容、会社概要、個人情報保護の取り組みなどを掲載しています。">
   <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
-  <link rel="shortcut icon" href="<?php echo get_styleseet_directory_uri(); ?>/favicon.ico">
-  <link rel="apple-touch-icon" href="<?php echo get_styleseet_directory_uri(); ?>/apple-touch-icon.png">
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
+  <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/reset.css">
-  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>/style.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
   <?php wp_head(); ?>
 </head>
 
