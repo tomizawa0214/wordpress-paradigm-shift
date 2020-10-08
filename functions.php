@@ -1,6 +1,19 @@
-<!-- アイキャッチ画像を設定できるようにする -->
+<!-- =========================================
+アイキャッチ画像を設定できるようにする
+========================================= -->
 add_theme_support('post-thumbnails');
 <?php add_theme_support('パラメータ'); ?>
+
+<!-- =========================================
+「続きへ」リンクを表示する
+========================================= -->
+function my_excerpt_more( $more ) {
+  <!-- 現在の投稿UTLを取得 -->
+  $url = get_permalink();
+  $html = '<a href="'. $url . '" class="readmore">続きへ</a>
+  return $html;
+}
+add_filter('excerpt_more', 'my_excerpt_more');
 
 <?php
   function the_slug() {

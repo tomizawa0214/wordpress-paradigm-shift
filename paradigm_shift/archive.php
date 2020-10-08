@@ -23,6 +23,7 @@
         <div class="entry-content">
           <!-- アイキャッチ画像を表示 -->
           <?php the_post_thumbnail(); ?>
+          <!-- 本文の先頭から110文字までを表示 -->
           <?php the_excerpt(); ?>
         </div>
         <?php edit_post_link(); ?>

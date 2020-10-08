@@ -1,3 +1,17 @@
+/*
+Theme Name: sample_marketing
+Theme URI: [ここにテーマのURLを記述します]
+Author: [ここにテーマの作成者名を記述します]
+Author URI: [ここにテーマの制作者のURLを記述します]
+Description: [ここにテーマの説明文を記述します]
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sample_marketing
+
+This theme is licensed under the GPL.
+Copyright (c) 2016 Sample Marketing.inc. All Rights Reserved.
+*/
 @charset "utf-8";
 
 /* ------------------------------------------------ */
@@ -91,6 +105,32 @@ img.alignright {
 	border-radius: 4px;
 	box-shadow: 1px 1px 1px #999999;
 	padding: 15px;
+}
+
+/* 一覧へ移動ボタン（続きを読むボタン） */
+a.readmore {
+	display: block;
+	margin-left: auto;
+	width: 6em;
+	height: 2em;
+	line-height: 2;
+	border: 1px solid #eeeeee;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px #999999;
+	text-align: center;
+	text-decoration: none;
+	padding-left: 1em;
+	position: relative;
+}
+a.readmore::before {
+	content: '▲';
+	-webkit-transform: rotate(90deg) translateX(-50%);
+	transform: rotate(90deg) translateX(-50%);
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	width: 14px;
+	height: 14px;
 }
 
 /* パンくずリスト */
@@ -406,6 +446,74 @@ footer {
 /* 12.お問い合わせページ専用スタイル
 /* ------------------------------------------------ */
 
+/* お問い合わせフォーム */
+#mail-form table {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#mail-form th {
+	font-weight: bold;
+	text-align: left;
+	width: 240px;
+	background: #f0f8ff;
+	vertical-align: top;
+}
+
+#mail-form th,
+#mail-form td {
+	border: 1px solid #ccc;
+	padding: 0.5em 0.5em;
+}
+
+#mail-form th span {
+	color: #fff;
+	padding: 0.1em 0.8em;
+	margin-right: 0.5em;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+#mail-form th span.required {
+	background: red;
+}
+
+#mail-form th span.notrequired {
+	background: #6495ed;
+}
+
+#mail-form tr:last-child td {
+	text-align: center;
+	border: none;
+	border-top: 1px solid #ccc;
+}
+
+#mail-form input[type="text"],
+#mail-form textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 0.2em 0.5em;
+	font-family: inherit;
+}
+
+#mail-form textarea {
+	min-height: 100px;
+}
+
+#mail-form input[type="submit"],
+#mail-form input[type="button"],
+#mail-form input[type="reset"] {
+	width: 120px;
+	background: #6495ed;
+	border: none;
+	color: #fff;
+	padding: 0.2em 0.5em;
+	margin-top: 20px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: top;
+	font-family: inherit;
+}
 
 /* ------------------------------------------------ */
 /* 13.ブログページ専用スタイル
@@ -658,6 +766,20 @@ body.archive .entry-content img {
 	/* ------------------------------------------------ */
 	/* 12.お問い合わせページ専用スタイル
 	/* ------------------------------------------------ */
+	#mail-form table {
+		width: 100%;
+	}
+	#mail-form th,
+	#mail-form td {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		border-bottom: none;
+	}
+
+	#mail-form tr:last-child td {
+		border-top: 1px solid #ccc;
+	}
 
 	/* ------------------------------------------------ */
 	/* 13.ブログページ専用スタイル
