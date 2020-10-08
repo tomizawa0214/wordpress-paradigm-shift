@@ -32,6 +32,10 @@
     <!--//記事-->
     <?php endwhile; endif; ?>
     <!-- 記事のループ -->
+    <!-- ページネーション -->
+    <?php if (function_exists('wp_pagenavi')) {
+      wp_pagenavi();
+    } ?>
   </section>
   <!--//コンテンツエリア-->
 <?php get_footer(); ?>
