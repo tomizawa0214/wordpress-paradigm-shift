@@ -1,3 +1,7 @@
+<!-- アイキャッチ画像を設定できるようにする -->
+add_theme_support('post-thumbnails');
+<?php add_theme_support('パラメータ'); ?>
+
 <?php
   function the_slug() {
     $slug = '';
