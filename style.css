@@ -64,10 +64,18 @@ a.post-edit-link {
 	appearance: button;
 	display: block;
 	text-decoration: none;
-	color: #333;
+	color: #FFF;
+	background: #668ad8;
+	border-bottom: solid 4px #627295;
+	border-radius: 3px;
 	width: 5em;
 	padding: 0.4em 1em;
 	text-align: center;
+}
+a.post-edit-link:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	border-bottom: none;
 }
 
 /* 画像の基本スタイル */
