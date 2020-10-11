@@ -1,16 +1,16 @@
 /*
-Theme Name: sample_marketing
-Theme URI: [ここにテーマのURLを記述します]
-Author: [ここにテーマの作成者名を記述します]
-Author URI: [ここにテーマの制作者のURLを記述します]
-Description: [ここにテーマの説明文を記述します]
+Theme Name: paradigm_shift
+Theme URI: http://paradigmshift.local
+Author: TOMIZAWA Jun
+Author URI: https://tomizawajun.com
+Description: オウンドメディアのブログ付き企業コーポレイトサイト用のWordPressテーマです。
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: sample_marketing
+Text Domain: paradigm_shift
 
 This theme is licensed under the GPL.
-Copyright (c) 2016 Sample Marketing.inc. All Rights Reserved.
+&copy; 2020 ParadigmShift
 */
 @charset "utf-8";
 
@@ -64,7 +64,7 @@ a.post-edit-link {
 	appearance: button;
 	display: block;
 	text-decoration: none;
-	color: #FFF;
+	color: #FFF !important;
 	background: #668ad8;
 	border-bottom: solid 4px #627295;
 	border-radius: 3px;
