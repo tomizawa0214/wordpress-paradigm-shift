@@ -9,27 +9,29 @@
   <h2>Information</h2>
   <div class="inner">
     <ul id="infolist">
-      <li>
-        <div class="thumb"><img src="http://paradigmshift.local/wp-content/uploads/2020/10/webshop-min.jpg" alt=""></div>
-        <div class="date">2020/09/10</div>
-        <div class="title"><a href="http://paradigmshift.local/estore-ranking-3">国内大手Eストアにて売上3位を獲得しました。</a></div>
-      </li>
-      <li>
-        <div class="thumb"><img src="http://paradigmshift.local/wp-content/uploads/2020/10/conosulting-min.jpg" alt=""></div>
-        <div class="date">2020/06/03</div>
-        <div class="title"><a href="http://paradigmshift.local/consulting-over-ten-companies">コンサルティング契約社数が10社を超えました。</a></div>
-      </li>
-      <li>
-        <div class="thumb"><img src="http://paradigmshift.local/wp-content/uploads/2020/05/new_product.jpg" alt=""></div>
-        <div class="date">2020/05/02</div>
-        <div class="title"><a href="http://paradigmshift.local/original-brand">当社オリジナルブランド商品の企画をスタートしました。</a></div>
-      </li>
-      <li>
-        <div class="thumb"><img src="http://paradigmshift.local/wp-content/uploads/2020/05/renewal.jpg" alt=""></div>
-        <div class="date">2020/04/10</div>
-        <div class="title"><a href="http://paradigmshift.local/homepage-renewal">ホームページを公開しました。</a></div>
-      </li>
+    <?php
+      $posts = get_posts('numberposts=5&category_name=news');
+      foreach ($posts as $post) {
+        setup_postdata($post);
+        ?>
+        <li>
+          <div class="thumb">
+            <?php the_post_thumbnail(); ?>
+          </div>
+          <div class="date">
+            <?php the_time("Y/m/d"); ?>
+          </div>
+          <div class="title">
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          </div>
+          <?php edit_post_link(); ?>
+        </li>
+        <?php
+      }
+    wp_reset_postdata();
+    ?>
     </ul>
+    <a class="readmore" href="<?php echo get_category_link(get_cat_ID('お知らせ')); ?>">一覧へ</a>
   </div>
 
   <!--事業内容-->
