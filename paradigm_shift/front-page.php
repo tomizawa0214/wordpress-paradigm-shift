@@ -3,7 +3,7 @@
   <section id="contents">
 
   <!--メイン画像-->
-  <img id="main_visual" class="inner" src="http://paradigmshift.local/wp-content/uploads/2020/10/main_visual.jpg" alt="株式会社ParadigmShift">
+  <img id="main_visual" class="inner" src="<?php echo CFS()->get('img_main_visual'); ?>" alt="株式会社ParadigmShift">
 
   <!--お知らせ-->
   <h2>Information</h2>
@@ -38,16 +38,16 @@
   <h2>株式会社ParadigmShiftの事業内容</h2>
   <div id="our-business" class="inner">
     <div class="biz-box col-4">
-      <h3>海外輸入小売事業</h3>
-      <a href="http://paradigmshift.local/business"><img class="photoframe" src="http://paradigmshift.local/wp-content/uploads/2020/10/import-min.jpg" alt="海外輸入小売事業"></a>
+      <h3><?php echo CFS()->get('txt_business1'); ?></h3>
+      <a href="http://paradigmshift.local/business"><img class="photoframe" src="<?php echo CFS()->get('img_business1'); ?>" alt="<?php echo CFS()->get('txt_business1'); ?>"></a>
     </div>
     <div class="biz-box col-4">
-      <h3>インターネット通販事業</h3>
-      <a href="http://paradigmshift.local/business"><img class="photoframe" src="http://paradigmshift.local/wp-content/uploads/2020/10/webshop-min.jpg" alt="インターネット通販事業"></a>
+      <h3><?php echo CFS()->get('txt_business2'); ?></h3>
+      <a href="http://paradigmshift.local/business"><img class="photoframe" src="<?php echo CFS()->get('img_business2'); ?>" alt="<?php echo CFS()->get('txt_business2'); ?>"></a>
     </div>
     <div class="biz-box col-4">
-      <h3>コンサルティング事業</h3>
-      <a href="http://paradigmshift.local/business"><img class="photoframe" src="http://paradigmshift.local/wp-content/uploads/2020/10/conosulting-min.jpg" alt="コンサルティング事業"></a>
+      <h3><?php echo CFS()->get('txt_business3'); ?></h3>
+      <a href="http://paradigmshift.local/business"><img class="photoframe" src="<?php echo CFS()->get('img_business3'); ?>" alt="<?php echo CFS()->get('txt_business3'); ?>"></a>
     </div>
   </div>
   </section>
